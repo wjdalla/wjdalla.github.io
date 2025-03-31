@@ -1,0 +1,112 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  /*background-color: #F8F8F8*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Spray+Paint&display=swap');
+
+/*MENU*/
+
+nav {margin: 10;}
+#logo /* O meu nome*/
+{
+    /*Font setting*/
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+
+    flex-grow: 1;
+    display: inline;
+    margin-left: 30px;
+
+}
+nav ul li  /* lista do Menu*/
+{
+/*Font setting*/
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 300;
+
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+nav ul /* lista do Menu | Defenições*/
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+/*APRESENTAÇÃO*/
+
+section p 
+{font-family: "Poppins";
+  font-size: 36px;
+  font-weight: 300;
+color: #F8F8F8;
+
+  /*Nsei se isto pretence aqui*/
+  background-color:#9969F9;
+  
+  width: 100%;
+  height: 50%;
+
+  
+  overflow: scroll;
+  
+  margin: 10px;
+  padding: 10px;
+}
+
+section p span
+{font-family: "Poppins";
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+/*IMAGENS SCROLL*/
+figure /*Imagens Sticky Scroll*/
+{ 
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+figure img /*Defenir o tamanho das imagens Stickys*/
+{
+  width: 100%;
+  height: 100%;
+}
+
+figcaption /*legenda das imagens stickys*/
+{
+  position: absolute;
+  top: 425px;
+  left: 92px;
+  color: #F8F8F8;
+  mix-blend-mode: difference;
+
+   /*Font setting*/
+   font-family: "Poppins";
+   font-size: 400 px;
+   font-weight: 700; 
+}
+
+figcaption span /*legenda das imagens stickys*/
+{
+  position: relative;
+  width: 50%;
+  height: 50%;
+
+   /*Font setting*/
+   font-family: "Poppins";
+   font-size: 10 px;
+   font-weight: 500; 
+}
