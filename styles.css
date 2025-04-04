@@ -9,7 +9,12 @@
 
 /*MENU*/
 
-nav {margin: 10;}
+nav 
+{
+  color: #F8F8F8;
+margin-bottom: 10px;
+margin-top: 10px;
+}
 #logo /* O meu nome*/
 {
     /*Font setting*/
@@ -22,6 +27,12 @@ nav {margin: 10;}
     margin-left: 30px;
 
 }
+
+#logo:hover
+{color: #9969F9
+}
+
+
 nav ul li  /* lista do Menu*/
 {
 /*Font setting*/
@@ -42,28 +53,49 @@ nav ul /* lista do Menu | Defenições*/
   align-items: center;
   
 }
-/*APRESENTAÇÃO*/
 
-section p 
-{font-family: "Poppins";
+nav ul li:hover
+{color: #9969F9}
+/*APRESENTAÇÃO*/
+#Presentation
+{
+  position: relative;
+  flex-direction: row;
+}
+div p 
+{
+/*Font setting*/
+font-family: "Poppins";
   font-size: 36px;
   font-weight: 300;
 color: #F8F8F8;
-
-  /*Nsei se isto pretence aqui*/
-  background-color:#9969F9;
-  
-  width: 100%;
-  height: 50%;
-
-  
-  overflow: scroll;
-  
-  margin: 10px;
-  padding: 10px;
+/*Background setting*/
+ background-color:#9969F9;
+  width: 35%;
+  height: 110%;
+  overflow:visible;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 150px;
+  /*to top-left corner, top-right corner,to bottom-left corner*/
+ border-radius: 0px 100px 20px 0px;
 }
 
-section p span
+/*o outro retângulo*/
+div #placeholder
+{
+  background-color:#9969F9;
+  width: 20%;
+  height: 110%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 150px;
+  margin-left: auto;
+  position: static
+}
+
+
+div p span
 {font-family: "Poppins";
     font-size: 36px;
     font-weight: bold;
@@ -95,7 +127,7 @@ figcaption /*legenda das imagens stickys*/
 
    /*Font setting*/
    font-family: "Poppins";
-   font-size: 400 px;
+
    font-weight: 700; 
 }
 
@@ -110,3 +142,32 @@ figcaption span /*legenda das imagens stickys*/
    font-size: 10 px;
    font-weight: 500; 
 }
+
+/*botão das imagens stickys*/
+.btn {
+  /*defenições para o manter no centro*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: #9969F9;
+  opacity: 25%;
+  color: #F8F8F8;
+  padding: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+
+  font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #9969F9;
+  color: #F8F8F8;
+  opacity: 100%;
+}
+
+
