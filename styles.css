@@ -24,7 +24,7 @@ margin-top: 10px;
 
     flex-grow: 1;
     display: inline;
-    margin-left: 30px;
+    margin-left: 20px;
 
 }
 
@@ -63,8 +63,10 @@ nav ul li:hover
 {
   position: relative;
   flex-direction: row;
+  display: inline;
 }
-div p 
+
+#Presentation p 
 {
 /*Font setting*/
 font-family: "Poppins";
@@ -72,15 +74,16 @@ font-family: "Poppins";
   font-weight: 300;
 color: #F8F8F8;
 /*Background setting*/
- background-color:#9969F9;
-  width: 35%;
-  height: 110%;
-  overflow:visible;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 150px;
-  /*to top-left corner, top-right corner,to bottom-left corner*/
- border-radius: 0px 100px 20px 0px;
+background-color:#9969F9;
+width: 35%;
+height: 110%;
+overflow:visible;
+margin-top: 50px;
+margin-bottom: 50px;
+padding: 150px;
+/*to top-left corner, top-right corner,to bottom-left corner*/
+border-radius: 0px 100px 20px 0px;
+
 }
 
 /*o outro retângulo*/
@@ -93,9 +96,9 @@ div #placeholder
   margin-bottom: 50px;
   padding: 150px;
   margin-left: auto;
-  position: static
-}
+  position: static;
 
+}
 
 div p span
 {font-family: "Poppins";
@@ -145,7 +148,7 @@ figcaption span /*legenda das imagens stickys*/
 }
 
 /*botão das imagens stickys*/
-.btn {
+section figure button {
   /*defenições para o manter no centro*/
   position: absolute;
   top: 50%;
@@ -165,23 +168,127 @@ figcaption span /*legenda das imagens stickys*/
     font-weight: 500;
 }
 
-.btn:hover {
+section figure button:hover {
   background-color: #9969F9;
   color: #F8F8F8;
   opacity: 100%;
 }
+
+/*   ABOUT ME   */
 
 #about_me p
 {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 300;
+  color: #F8F8F8;
+  /*Background setting*/
+ background-color:#9969F9;
+ width: 35%;
+ height: 110%;
+ overflow:visible;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ padding: 150px;
+ /*to top-left corner, top-right corner,to bottom-left corner*/
+border-radius: 0px 100px 20px 0px;
 }
 
 h2
 {
-margin-left: 60px ;
+margin-left: 30px;
 font-family: "Poppins"
 font-size: 500px
 font-weight: 300
+}
+
+/*Secção que controla a Tool Box: a sua forma e espaçamento entre o título e os conteudos*/
+#Designers_ToolBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*ToolKit - Agrupa os conteúdos e controla a sua formação*/
+.box-group {
+  padding: 40px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: auto;
+ max-width: 60%;
+ justify-content: flex-end;
+}
+
+/*Controla os conteúdos dentro do ToolKit*/
+.TollBox span img
+{
+  position: absolute;
+  margin-left: 20px;
+
+}
+    /* espaçamento entre o ícone e o texto */
+    .TollBox img {
+      margin-right: 20px; /* espaçamento entre o ícone e o texto */
+    }
+
+/* dá forma á ToolBox */
+.TollBox
+{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #F8F8F8;
+  border: 3px solid #9969F9;
+  border-radius: 10px;
+  width: 200px;
+}
+/* texto da Toolbox */
+.TollBox span
+{
+  color: black;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.TextBox
+{
+/*Background setting*/
+background-color:#9969F9;
+width:19%;
+height: 20%;
+margin-top: 30px;
+padding: 15px;
+/*to top-left corner, top-right corner,to bottom-left corner*/
+border-radius: 10px 100px 20px 10px;
+}
+
+
+.TextBox p
+{
+  color: #F8F8F8;
+font-size: 24px;
+font-weight: normal;
+background-color: none;
+width: 100%;
+height: 100%;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.TextBox p span
+{font-size: 24px;
+  font-weight: 600;}
+.TextBox h5
+{
+color: #F8F8F8;
+background-color: none;
+font-weight: 400;
+width: 100%;
+height: 100%;
+margin-left: 40px;
+padding: 5px;
 }
