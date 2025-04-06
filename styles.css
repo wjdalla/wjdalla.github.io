@@ -129,6 +129,7 @@ figcaption /*legenda das imagens stickys*/
   left: 92px;
   color: #F8F8F8;
   mix-blend-mode: difference;
+  margin-top: 15px;
 
    /*Font setting*/
    font-family: "Poppins";
@@ -140,6 +141,7 @@ figcaption span /*legenda das imagens stickys*/
   position: relative;
   width: 50%;
   height: 50%;
+  margin-top: 10px;
 
    /*Font setting*/
    font-family: "Poppins";
