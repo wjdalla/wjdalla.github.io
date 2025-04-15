@@ -18,7 +18,6 @@ body {
 }
 
 
-
 a:link { 
   text-decoration: none;
   font-weight: 300;
@@ -327,7 +326,7 @@ h2
 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 10%;
@@ -456,7 +455,7 @@ h2
 {
 margin-left: 3%;
   margin-bottom: 10px;
-  width:45%; 
+  width:80%; 
   font-size: 16px;
   font-weight: normal;
 }
@@ -521,6 +520,93 @@ video
     {
       margin: 0%;
     }
+
+#Branding
+{
+  margin-top: 2%;
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  gap: 3%;
+
+}
+
+.Logo_showcase img
+{
+  width: 80%;
+  padding: 5%;
+}
+
+h3
+{
+  margin-left: 2%;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+#TextBox_resistoo_blue
+{
+    /*Background setting*/
+    padding: 40px;
+    background-color:#19226D;
+      width: 20%;
+      margin-top: 2%;
+    /*to top-left corner, top-right corner,to bottom-left corner*/
+    border-radius: 10px 100px 20px 10px;
+}
+      #TextBox_resistoo_blue h2
+      {
+        color: #FFAC18;
+      font-size: 24px;
+      padding-bottom: 1%;
+      padding-top: 3%;
+      }
+
+      #TextBox_resistoo_blue ul li
+      {
+        font-size: 15px;
+        color: #FFAC18;
+      }
+
+      #TextBox_resistoo_blue li span
+      {
+        font-weight: 600;
+      }
+
+      #TextBox_resistoo_yellow
+      {
+          /*Background setting*/
+          padding: 40px;
+          background-color: #FFAC18;
+            width: 20%;
+            margin-top: 2%;
+          /*to top-left corner, top-right corner,to bottom-left corner*/
+          border-radius: 10px 20px 10px 100px;
+      }
+            #TextBox_resistoo_yellow h2
+            {
+              color: #19226D;
+            font-size: 24px;
+            padding-bottom: 1%;
+            padding-top: 3%;
+            }
+      
+            #TextBox_resistoo_yellow ul li
+            {
+              font-size: 15px;
+              color: #19226D;
+            }
+      
+            #TextBox_resistoo_yellow li span
+            {
+              font-weight: 600;
+            }
+
+
+
+
+
+
 
 
 /*   footer  */
