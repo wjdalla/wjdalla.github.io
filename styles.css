@@ -602,12 +602,100 @@ h3
               font-weight: 600;
             }
 
+/*   CONTACTS   */
 
+#Contacts_page
+{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
 
+#biggest_text p
+{
+  font-size: 70px;
+}
 
+  #biggest_text span
+  {
+    font-size: 70px;
+    font-weight: 500;
+  }
 
+  #TextBox_contacts p
+  {
+    padding: 40px;
+    background-color:#9969F9;
+      width: 80%;
+      margin-top: 2%;
+    /*to top-left corner, top-right corner,to bottom-left corner*/
+    border-radius: 10px 100px 20px 10px;
 
+    font-size: 60px;
+    font-weight: normal;
+    color: #F8F8F8;
+  }
 
+  #TextBox_contacts a
+  {
+    font-size: 60px;
+    font-weight: normal;
+    color: #F8F8F8;
+  }
+
+  #TextBox_contacts a:hover
+  {
+    color: #432285;
+  }
+
+  #Socials_contacts
+  {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 10%;
+  }
+    .socials_button_contacts
+    {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    gap: 2%;
+    margin-top: 4%;
+        /*background*/
+      background-color: #9969F9;
+      border-radius: 30px;
+      /*font setting*/  
+      color: #F8F8F8;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .socials_button_contacts a
+    {
+            /*font setting*/  
+            color: #F8F8F8;
+            font-size: 16px;
+            font-weight: normal;
+    }
+    .socials_button_contacts a:visited
+    {
+            /*font setting*/  
+            color: #F8F8F8;
+            font-size: 16px;
+            font-weight: normal;
+    }
+    .socials_button_contacts a:hover
+    {
+            /*font setting*/  
+            color:#432285;
+            font-size: 16px;
+            font-weight: normal;
+    }
 
 /*   footer  */
 
