@@ -17,34 +17,52 @@ body {
   font-size: 16px;
 }
 
+/* LINKS */
+    a:link { 
+      text-decoration: none;
+      font-weight: 300;
+    } 
+    a:visited { 
+      text-decoration: none; 
+      color: black;
+    } 
+    a:hover { 
+      text-decoration: none;
+      color:#9969F9;
+    } 
+    a:active { 
+      text-decoration: none; 
+    }
 
-a:link { 
-  text-decoration: none;
-  font-weight: 300;
-} 
-a:visited { 
-  text-decoration: none; 
-  color: black;
-} 
-a:hover { 
-  text-decoration: none;
-  color:#9969F9;
-} 
-a:active { 
-  text-decoration: none; 
-}
 
+/*Lists*/
 ul li
 {
   list-style-type: disc;
   margin-left: 5%;
 }
 
+/*Text (h)*/
+h2
+{
+  display: flex;
+  margin-left: 2%;
+}
+
 h5
-      {
-      font-weight: 400;
-      }
-/*MENU*/
+{
+  font-weight: 400;
+}
+
+#subtitle_right
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+
+/* MENU - nav bar*/
 
 nav 
 {
@@ -84,8 +102,10 @@ nav ul li  /* lista do Menu*/
 }
 
 
-/*APRESENTAÇÃO*/
+/* Index */
+/* APRESENTAÇÃO */
 
+/* controla a primeira área com os dois retângulos*/
 #beggining
 {
   display: flex;
@@ -95,68 +115,68 @@ nav ul li  /* lista do Menu*/
   align-items: flex-start;
 }
 
+/* retângulo à esquerda - nome e serviços*/
 #left
 {
   background-color:#9969F9;
   width: 55%;
   margin-top: 50px;
   margin-bottom: 50px;
-/*to top-left corner, top-right corner,to bottom-left corner*/
-border-radius: 0px 100px 20px 0px;
-display: flex;
-justify-content: center;
-align-items: center;
-
+    /*to top-left corner, top-right corner,to bottom-left corner*/
+    border-radius: 0px 100px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+    #left p 
+    {
+      padding: 100px;
+      width: 70%;
+    /*Font setting*/
+      font-size: 36px;
+      color: #F8F8F8;
+    /*para defenir bem o tamanho que eu desejo = quase a tela toda*/
+    margin-top: 80px;
+    margin-bottom: 80px;
+    }
+  
+    /*Por os textos em grande e bold = o meu nome*/
+    div p span
+    {
+        font-size: 36px;
+        font-weight: bold;
+      }
 
-#left p 
-{
-  padding: 100px;
-  width: 70%;
-
-/*Font setting*/
-  font-size: 36px;
-  color: #F8F8F8;
-
-/*para defenir bem o tamanho que eu desejo = quase a tela toda*/
-margin-top: 80px;
-margin-bottom: 80px;
-}
-
+/* retângulo à direita - "Currently available""*/
 #right
 {
   background-color:#9969F9;
   width: 35%;
   margin-top: 50px;
   margin-bottom: 50px;
-/*to top-left corner, top-right corner,to bottom-left corner*/
-border-radius: 100px 0px  0px 20px;
-display: flex;
-justify-content: center;
-align-items: center;
+  /*to top-left corner, top-right corner,to bottom-left corner*/
+  border-radius: 100px 0px  0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#right p 
-{
-  padding: 100px;
-  width: 30%;
-
-/*Font setting*/
-color: #F8F8F8;
-font-size: 36px;
-
-/*para defenir bem o tamanho que eu desejo = quase a tela toda*/
-margin-top: 20%;
-margin-bottom: 20%;
-}
-
-/*Por os textos em grande e bold = o meu nome*/
-div p span
-{
-    font-size: 36px;
-    font-weight: bold;
+  #right p 
+  {
+    padding: 100px;
+    width: 30%;
+      /*Font setting*/
+      color: #F8F8F8;
+      font-size: 36px;
+      /*para defenir bem o tamanho que eu desejo = quase a tela toda*/
+      margin-top: 20%;
+      margin-bottom: 20%;
   }
-/*IMAGENS SCROLL*/
+
+
+/* IMAGENS SCROLL */
+
+/* Projetos principais*/
 figure /*Imagens Sticky Scroll*/
 { 
   width: 100%;
@@ -166,36 +186,36 @@ figure /*Imagens Sticky Scroll*/
   left: 0px;
 }
 
-figure img /*Defenir o tamanho das imagens Stickys*/
-{
-  width: 100%;
-  height: 100%;
-}
+  figure img /*Defenir o tamanho das imagens Stickys*/
+  {
+    width: 100%;
+    height: 100%;
+  }
 
-figcaption /*legenda das imagens stickys*/
-{
-  position: absolute;
-  top: 425px;
-  left: 92px;
-  color: #F8F8F8;
-  mix-blend-mode: difference;
-  margin-top: 15px;
+    figcaption /*legenda das imagens stickys*/
+    {
+      position: absolute;
+      top: 425px;
+      left: 92px;
+      color: #F8F8F8;
+      mix-blend-mode: difference;
+      margin-top: 15px;
 
-   /*Font setting*/
-   font-weight: 700; 
-}
+      /*Font setting*/
+      font-weight: 700; 
+    }
 
-figcaption span /*legenda das imagens stickys*/
-{
-  position: relative;
-  width: 50%;
-  height: 50%;
-  margin-top: 1%;
+      figcaption span /*legenda das imagens stickys - texto secundário*/
+      {
+        position: relative;
+        width: 50%;
+        height: 50%;
+        margin-top: 1%;
 
-   /*Font setting*/
-   font-size: 10 px;
-   font-weight: 500; 
-}
+        /*Font setting*/
+        font-size: 10 px;
+        font-weight: 500; 
+      }
 
 /*botão das imagens stickys*/
 section figure a {
@@ -218,15 +238,18 @@ section figure a {
     font-weight: 500;
     text-align: center;
 }
+    /*botão das imagens stickys - interação hover*/
+    section figure a:hover {
+      background-color: #9969F9;
+      color: #F8F8F8;
+      opacity: 100%;
+    }
 
-section figure a:hover {
-  background-color: #9969F9;
-  color: #F8F8F8;
-  opacity: 100%;
-}
+
 
 /*   ABOUT ME   */
 
+/* retângulo à esquerda - Texto sobre mim*/
 #left_aboutme
 {
 background-color:#9969F9;
@@ -240,22 +263,16 @@ justify-content: center;
 align-items: center;
 }
 
-#left_aboutme p
-{
-  padding: 100px;
-  color: #F8F8F8;
-
-  margin-top: 5%;
- margin-bottom: 50px;
-}
-
-h2
-{
-  display: flex;
-  margin-left: 2%;
-}
+  #left_aboutme p
+  {
+    padding: 100px;
+    color: #F8F8F8;
+    margin-top: 5%;
+  margin-bottom: 50px;
+  }
 
 
+/* TOOL-BOX - Onde mostro aptidões técnicas - retângulos com icones e texto*/
 /*Secção que controla a Tool Box: a sua forma e espaçamento entre o título e os conteudos*/
 #Designers_ToolBox {
   display: flex;
@@ -276,17 +293,6 @@ h2
  justify-content: flex-end;
 }
 
-/*Controla os conteúdos dentro do ToolKit*/
-.TollBox span img
-{
-  position: absolute;
-  margin-left: 20px;
-}
-    /* espaçamento entre o ícone e o texto */
-    .TollBox img {
-      margin-right: 20px; /* espaçamento entre o ícone e o texto */
-    }
-
 /* dá forma á ToolBox */
 .TollBox
 {
@@ -298,19 +304,33 @@ h2
   border-radius: 10px;
   width: 200px;
 }
-/* texto da Toolbox */
-.TollBox span
-{
-  font-size: 15px;
-  font-weight: 600;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  gap: 25%;
-}
 
+  /*Controla os conteúdos dentro do ToolKit*/
+  .TollBox span img
+  {
+    position: absolute;
+    margin-left: 20px;
+  }
+      /* espaçamento entre o ícone e o texto */
+      .TollBox img {
+        margin-right: 20px; /* espaçamento entre o ícone e o texto */
+      }
+
+
+  /* texto da Toolbox */
+  .TollBox span
+  {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 25%;
+  }
+
+/*Titulos das Info_Boxes - Educação e Experiência*/
 #Education_Experience
 {
   display: flex;
@@ -321,6 +341,7 @@ h2
   gap: 60%;
   padding: 0;
 }
+
 /* Controla as caixas de texto = contém diferentes informações*/
 .Info_Boxes
 {
@@ -333,11 +354,12 @@ h2
   margin-left: 2%;
 }
 
-  #TextBox
+/*Caixa caracterizada pelas formas e a cor lilás*/
+  #TextBox 
   {
   /*Background setting*/
   padding: 40px;
-  background-color:#9969F9;
+  background-color: #9969F9;
     width: 20%;
     margin-top: 2%;
   /*to top-left corner, top-right corner,to bottom-left corner*/
@@ -358,12 +380,7 @@ h2
         font-weight: 600;
       }
 
-      #TextBox h5
-      {
-      color: #F8F8F8;
-      font-weight: 400;
-      }
-
+ /*Caixa caracterizada pela forma e o stroke lilás*/
 #TextBox_outline
 {
   /*Background setting*/
@@ -398,6 +415,7 @@ h2
     font-weight: 400;
     }
 
+/* Conjunto de 3 listas ou textos  na horizontal*/
 #Lists
 {
   display: flex;
@@ -410,26 +428,11 @@ h2
   margin-top: 3%;
 }
 
-.lists_ul
-{
-  width: 90%;
-}
+    .lists_ul
+    {
+      width: 90%;
+    }
 
-#subtitle_right
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 3%;
-}
-
-#journal
-{
-  width: 23%;
-  height: 23%;
-  margin-top: 1%;
-  border-radius: 10px;
-}
 #Journaling_Gallery
 {
   display: flex;
@@ -442,8 +445,19 @@ h2
     margin-bottom: 2%;
 }
 
+    /* Configuração das imagens da Journaling_Gallery*/
+    #journal
+    {
+      width: 23%;
+      height: 23%;
+      margin-top: 1%;
+      border-radius: 10px;
+    }
+
+
 /*   PROJECTS  */
 
+/*Titulo dos Projetos*/
  section h1
 {
   margin-left: 3%;
@@ -451,6 +465,7 @@ h2
   margin-bottom: 1%;
 }
 
+/*Texto introdução dos projetos*/
 .project_texts p
 {
 margin-left: 3%;
@@ -460,6 +475,7 @@ margin-left: 3%;
   font-weight: normal;
 }
 
+/*Texto - Metodologia e pessoas relacionadas ao trabalho*/
 .project_texts p span
 {
   font-size: 13px;
