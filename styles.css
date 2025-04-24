@@ -17,23 +17,34 @@ body {
   font-size: 16px;
 }
 
-/* LINKS */
-    a:link { 
-      text-decoration: none;
-      font-weight: 300;
-    } 
-    a:visited { 
-      text-decoration: none; 
-      color: black;
-    } 
-    a:hover { 
-      text-decoration: none;
-      color:#9969F9;
-    } 
-    a:active { 
-      text-decoration: none; 
-    }
 
+
+header
+{
+  width: 100%;
+}
+
+/* LINKS */
+a:link { 
+  text-decoration: none;
+  font-weight: 300;
+} 
+a:visited { 
+  text-decoration: none; 
+  color: black;
+} 
+a:hover { 
+  text-decoration: none;
+  color:#9969F9;
+} 
+a:active { 
+  text-decoration: none; 
+}
+a
+{
+  text-decoration: none;
+  color: #9969F9;
+}
 
 /*Lists*/
 ul li
@@ -42,11 +53,26 @@ ul li
   margin-left: 5%;
 }
 
-/*Text (h)*/
+/*Text styles (h)*/
+
+h1
+{
+  font-weight: 300;
+}
+
 h2
 {
   display: flex;
   margin-left: 2%;
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+h3
+{
+  margin-left: 2%;
+  font-weight: 500;
+  margin-top: 2%;
 }
 
 h5
@@ -72,14 +98,14 @@ border-bottom: #9969F9 3px solid;
 
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 
-
-nav a /* O meu nome*/
+#name_title /*o meu nome*/
 {
     /*Font setting*/
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 27px;
+    font-weight: bold;
 
     margin-left: 2%;
 }
@@ -89,7 +115,7 @@ nav ul /* lista do Menu | Defenições*/
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-right: 2%;
+  margin-right: 8%;
 }
 
 nav ul li  /* lista do Menu*/
@@ -97,10 +123,76 @@ nav ul li  /* lista do Menu*/
 /*Font setting*/
     
   font-size: 17px;
+  font-weight: normal;
   list-style-type: none;
-  margin-right: 30px;
+  margin-right: 3%;
 }
 
+/*   footer  */
+
+footer
+{
+padding: 2%;
+border-top: #9969F9 5px solid;
+border-radius: 20px;
+
+/*flex settings*/
+display: flex;
+justify-content: space-between;
+margin-top: 2%;
+}
+
+footer p
+{
+  letter-spacing: 1.5px;
+}
+
+footer span
+{
+  font-size: 20px;
+  font-weight: bold;
+  color: #9969F9;
+
+}
+
+#Socials
+{
+width: 70%;
+display: flex;
+justify-content: flex-end;
+gap: 2%;
+}
+
+.socials_button
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+width: 18%;
+gap: 2%;
+    /*background*/
+  background-color: #9969F9;
+  border-radius: 30px;
+  /*font setting*/  
+  color: #F8F8F8;
+  font-size: 14px;
+}
+
+#Socials .socials_button img
+{
+  width: 13%;
+}
+
+#Socials a:visited
+{
+  color: #F8F8F8;
+}
+
+#Socials a:hover
+{
+  color: #432285;
+}
 
 /* Index */
 /* APRESENTAÇÃO */
@@ -112,48 +204,61 @@ nav ul li  /* lista do Menu*/
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 /* retângulo à esquerda - nome e serviços*/
 #left
 {
   background-color:#9969F9;
-  width: 55%;
+  width: 55vw;
   margin-top: 50px;
   margin-bottom: 50px;
-    /*to top-left corner, top-right corner,to bottom-left corner*/
-    border-radius: 0px 100px 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+  /* to top-left corner, top-right corner,to bottom-left corner */
+  border-radius: 0px 100px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-    #left p 
-    {
-      padding: 100px;
-      width: 70%;
-    /*Font setting*/
-      font-size: 36px;
-      color: #F8F8F8;
-    /*para defenir bem o tamanho que eu desejo = quase a tela toda*/
-    margin-top: 80px;
-    margin-bottom: 80px;
-    }
+
+#left p 
+{
+  padding: 100px;
+  width: 70%;
+  color: #F8F8F8;
+  /* para defenir bem o tamanho que eu desejo = quase a tela toda */
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#left #index 
+{
+  /* Font setting */
+  font-size: 36px;
+}
+
+#left #about 
+{
+  /* Font setting */
+  font-size: 22px;
+}
   
-    /*Por os textos em grande e bold = o meu nome*/
-    div p span
-    {
-        font-size: 36px;
-        font-weight: bold;
-      }
+/*Por os textos em grande e bold = o meu nome*/
+#left p span
+{
+  font-size: 36px;
+  font-weight: bold;
+}
 
 /* retângulo à direita - "Currently available""*/
 #right
 {
   background-color:#9969F9;
-  width: 35%;
+  width: 35vw;
   margin-top: 50px;
   margin-bottom: 50px;
+
   /*to top-left corner, top-right corner,to bottom-left corner*/
   border-radius: 100px 0px  0px 20px;
   display: flex;
@@ -161,18 +266,23 @@ nav ul li  /* lista do Menu*/
   align-items: center;
 }
 
-  #right p 
-  {
-    padding: 100px;
-    width: 30%;
-      /*Font setting*/
-      color: #F8F8F8;
-      font-size: 36px;
-      /*para defenir bem o tamanho que eu desejo = quase a tela toda*/
-      margin-top: 20%;
-      margin-bottom: 20%;
-  }
+#right p 
+{
+  /*Font setting*/
+  color: #F8F8F8;
+  font-size: 36px;
+}
 
+#right p span
+{
+  text-decoration-line: underline;
+}
+
+#beggining a
+{
+  color: #F8F8F8;
+  text-decoration-line: underline;
+}
 
 /* IMAGENS SCROLL */
 
@@ -195,8 +305,8 @@ figure /*Imagens Sticky Scroll*/
     figcaption /*legenda das imagens stickys*/
     {
       position: absolute;
-      top: 425px;
-      left: 92px;
+      top: 50%;
+      left: 6.5%;
       color: #F8F8F8;
       mix-blend-mode: difference;
       margin-top: 15px;
@@ -227,7 +337,7 @@ section figure a {
   
   color: #F8F8F8;
   background-color: #9969F9;
-  opacity: 25%;
+  opacity: 45%;
 
   padding: 50px;
   border: none;
@@ -274,51 +384,73 @@ align-items: center;
 
 /* TOOL-BOX - Onde mostro aptidões técnicas - retângulos com icones e texto*/
 /*Secção que controla a Tool Box: a sua forma e espaçamento entre o título e os conteudos*/
-#Designers_ToolBox {
+
+#right #Designers_ToolBox 
+{
+  width: 100%;
+  height: 70%;
+  padding-left: 100px;
+  
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  align-content: flex-start;
+  gap: 2%;
 }
 
-/*ToolKit - Agrupa os conteúdos e controla a sua formação*/
-.box-group {
-  padding: 40px;
+#right #Designers_ToolBox .TollBox 
+{
+  border: 3px solid #F8F8F8;
+  border-radius: 10px;
+  width: 200px;
+
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
-  margin-left: auto;
- max-width: 60%;
- justify-content: flex-end;
+
+  padding: 15px;
+}
+
+#right #Designers_ToolBox .TollBox img
+{
+  width: 50px;
+}
+
+#right #Designers_ToolBox .TollBox p
+{
+  flex-grow: 1;
+  font-size: 16px;
 }
 
 /* dá forma á ToolBox */
-.TollBox
+TollBox
 {
   display: flex;
   align-items: center;
-  padding: 15px;
+  /* padding: 15px; */
   background-color: #F8F8F8;
   border: 3px solid #9969F9;
-  border-radius: 10px;
-  width: 200px;
+  
 }
 
   /*Controla os conteúdos dentro do ToolKit*/
-  .TollBox span img
+  TollBox span img
   {
     position: absolute;
     margin-left: 20px;
   }
-      /* espaçamento entre o ícone e o texto */
-      .TollBox img {
-        margin-right: 20px; /* espaçamento entre o ícone e o texto */
-      }
+  /* espaçamento entre o ícone e o texto */
+  TollBox img {
+    margin-right: 20px; /* espaçamento entre o ícone e o texto */
+  }
 
 
   /* texto da Toolbox */
-  .TollBox span
+  TollBox span
   {
     font-size: 15px;
     font-weight: 600;
@@ -354,67 +486,6 @@ align-items: center;
   margin-left: 2%;
 }
 
-/*Caixa caracterizada pelas formas e a cor lilás*/
-  #TextBox 
-  {
-  /*Background setting*/
-  padding: 40px;
-  background-color: #9969F9;
-    width: 20%;
-    margin-top: 2%;
-  /*to top-left corner, top-right corner,to bottom-left corner*/
-  border-radius: 10px 100px 20px 10px;
-  }
-
-      #TextBox p
-      {
-        color: #F8F8F8;
-      font-size: 24px;
-      padding-bottom: 5%;
-      padding-top: 5%;
-      }
-
-      #TextBox p span
-      {
-        font-size: 24px;
-        font-weight: 600;
-      }
-
- /*Caixa caracterizada pela forma e o stroke lilás*/
-#TextBox_outline
-{
-  /*Background setting*/
-  padding: 40px;
-  border:#9969F9 4px solid;
-    width: 20%;
-    margin-top: 2%;
-  /*to top-left corner, top-right corner,to bottom-left corner*/
-  border-radius: 20px 100px 20px 100px;
-  display: flex;
-  flex-wrap:wrap;
-  align-items: center;
-}
-    #TextBox_outline p
-    {
-      color:#9969F9;
-    font-size: 24px;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    }
-
-    #TextBox_outline p span
-    {
-      color:#9969F9;
-      font-size: 24px;
-      font-weight: 600;
-    }
-
-    #TextBox_outline h5
-    {
-    color:#9969F9;
-    font-weight: 400;
-    }
-
 /* Conjunto de 3 listas ou textos  na horizontal*/
 #Lists
 {
@@ -435,28 +506,85 @@ align-items: center;
 
 #Journaling_Gallery
 {
+  width: 97vw;
+  height: 100vh;
+  
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
-  gap: 1%;
-  width: 100%;
-    margin-left: 3%;
-    margin-bottom: 2%;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: stretch;
+  margin-left: 1%;
+  margin-top: 2%;
+  gap: 1.5%;
 }
 
-    /* Configuração das imagens da Journaling_Gallery*/
-    #journal
-    {
-      width: 23%;
-      height: 23%;
-      margin-top: 1%;
-      border-radius: 10px;
-    }
+#Journaling_Gallery #one
+{
+  background-image: url("about_media/svt_itorijanai.jpeg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /*contain*/
+}
 
+#Journaling_Gallery #two
+{
+  background-image: url("about_media/wjsn_chocome_hmph!.jpeg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Journaling_Gallery #three
+{
+  background-image: url("about_media/bss_fighting.jpg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Journaling_Gallery #four
+{
+  background-image: url("about_media/wjsn_myblack_myattitude.jpeg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Journaling_Gallery #five
+{
+  background-image: url("about_media/artms_virtualangel.jpg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Journaling_Gallery #six
+{
+  background-image: url("about_media/ive_heya.jpg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Journaling_Gallery #seven
+{
+  background-image: url("about_media/aespa_supernova.jpg");
+  width: 23%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*   PROJECTS  */
-
 /*Titulo dos Projetos*/
  section h1
 {
@@ -478,7 +606,18 @@ margin-left: 3%;
 /*Texto - Metodologia e pessoas relacionadas ao trabalho*/
 .project_texts p span
 {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Project_thumbnail
+{
+  width: 100 vw;
+}
+
+.Important_Frames
+{
+  width: 100%;
 }
 
 #app_showcase
@@ -501,6 +640,7 @@ video
 {
   position: relative;
 }
+
 .Wireframes
 {
   position: relative;
@@ -520,6 +660,30 @@ video
   width: 10%;
   border: black 1px solid;
   margin-bottom: 1%;
+}
+
+/*Localizada no projeto Kayak*/
+#Flowchart
+{
+width: 80%;
+margin-left: 10%;
+}
+
+/*Localizada no projeto Kayak*/
+#Testing
+{
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin-bottom: 2%;
+}
+
+#Testing_one img
+{
+  width: 50vw;
+  border: black 1px solid;
+  border-radius: 10px;
 }
 
 .Datasheet
@@ -553,13 +717,78 @@ video
   padding: 5%;
 }
 
-h3
+
+/*Todas as Text_Boxes*/
+
+/*Caixa caracterizada pelas formas e a cor lilás*/
+/*Localizada no About Me*/
+#TextBox 
 {
-  margin-left: 2%;
-  font-weight: 500;
+/*Background setting*/
+padding: 40px;
+background-color: #9969F9;
+  width: 20%;
   margin-top: 2%;
+/*to top-left corner, top-right corner,to bottom-left corner*/
+border-radius: 10px 100px 20px 10px;
 }
 
+    #TextBox p
+    {
+      color: #F8F8F8;
+    font-size: 24px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    }
+
+    #TextBox p span
+    {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    #TextBox h5
+    {
+      color: #F8F8F8;
+    }
+
+/*Caixa caracterizada pela forma e o stroke lilás*/
+/*Localizada no About Me*/
+#TextBox_outline
+{
+/*Background setting*/
+padding: 40px;
+border:#9969F9 4px solid;
+  width: 20%;
+  margin-top: 2%;
+/*to top-left corner, top-right corner,to bottom-left corner*/
+border-radius: 20px 100px 20px 100px;
+display: flex;
+flex-wrap:wrap;
+align-items: center;
+}
+  #TextBox_outline p
+  {
+    color:#9969F9;
+  font-size: 24px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  }
+
+  #TextBox_outline p span
+  {
+    color:#9969F9;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  #TextBox_outline h5
+  {
+  color:#9969F9;
+  font-weight: 400;
+  }
+
+  /*Localizada no projeto Resistoo*/
 #TextBox_resistoo_blue
 {
     /*Background setting*/
@@ -589,194 +818,48 @@ h3
         font-weight: 600;
       }
 
-      #TextBox_resistoo_yellow
-      {
-          /*Background setting*/
-          padding: 40px;
-          background-color: #FFAC18;
-            width: 20%;
-            margin-top: 2%;
-          /*to top-left corner, top-right corner,to bottom-left corner*/
-          border-radius: 10px 20px 10px 100px;
-      }
-            #TextBox_resistoo_yellow h2
-            {
-              color: #19226D;
-            font-size: 24px;
-            padding-bottom: 1%;
-            padding-top: 3%;
-            }
-      
-            #TextBox_resistoo_yellow ul li
-            {
-              font-size: 15px;
-              color: #19226D;
-            }
-      
-            #TextBox_resistoo_yellow li span
-            {
-              font-weight: 600;
-            }
-
-/*   CONTACTS   */
-
-#Contacts_page
+/*Localizada no projeto Resistoo*/
+#TextBox_resistoo_yellow
 {
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-#biggest_text p
-{
-  font-size: 70px;
-}
-
-  #biggest_text span
-  {
-    font-size: 70px;
-    font-weight: 500;
-  }
-
-  #TextBox_contacts p
-  {
+    /*Background setting*/
     padding: 40px;
-    background-color:#9969F9;
-      width: 80%;
+    background-color: #FFAC18;
+      width: 20%;
+      margin-top: 2%;
+    /*to top-left corner, top-right corner,to bottom-left corner*/
+    border-radius: 10px 20px 10px 100px;
+}
+      #TextBox_resistoo_yellow h2
+      {
+        color: #19226D;
+      font-size: 24px;
+      padding-bottom: 1%;
+      padding-top: 3%;
+      }
+
+      #TextBox_resistoo_yellow ul li
+      {
+        font-size: 15px;
+        color: #19226D;
+      }
+
+      #TextBox_resistoo_yellow li span
+      {
+        font-weight: 600;
+      }
+
+#TextBox_black_outline
+{
+    /*Background setting*/
+    padding: 40px;
+    border: black 4px solid;
+      width: 20%;
       margin-top: 2%;
     /*to top-left corner, top-right corner,to bottom-left corner*/
     border-radius: 10px 100px 20px 10px;
-
-    font-size: 60px;
-    font-weight: normal;
-    color: #F8F8F8;
-  }
-
-  #TextBox_contacts a
-  {
-    font-size: 60px;
-    font-weight: normal;
-    color: #F8F8F8;
-  }
-
-  #TextBox_contacts a:hover
-  {
-    color: #432285;
-  }
-
-  #Socials_contacts
-  {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    gap: 10%;
-  }
-    .socials_button_contacts
-    {
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    gap: 2%;
-    margin-top: 4%;
-        /*background*/
-      background-color: #9969F9;
-      border-radius: 30px;
-      /*font setting*/  
-      color: #F8F8F8;
-      font-size: 16px;
-      font-weight: normal;
-    }
-
-    .socials_button_contacts a
-    {
-            /*font setting*/  
-            color: #F8F8F8;
-            font-size: 16px;
-            font-weight: normal;
-    }
-    .socials_button_contacts a:visited
-    {
-            /*font setting*/  
-            color: #F8F8F8;
-            font-size: 16px;
-            font-weight: normal;
-    }
-    .socials_button_contacts a:hover
-    {
-            /*font setting*/  
-            color:#432285;
-            font-size: 16px;
-            font-weight: normal;
-    }
-
-/*   footer  */
-
-footer
-{
-padding: 20px;
-border-top: #9969F9 5px solid;
-border-radius: 20px;
-
-/*flex settings*/
-display: flex;
-justify-content: space-between;
-
 }
 
-footer p
+#TextBox_black_outline ol li
 {
-  margin-left: 10px;
-  letter-spacing: 1.5px;
-}
-
-footer span
-{
-  font-size: 20px;
-  font-weight: bold;
-  color: #9969F9;
-
-}
-
-#Socials
-{
-width: 70%;
-display: flex;
-justify-content: flex-end;
-gap: 2%;
-
-}
-
-footer img
-{
-  width: 13%;
-}
-
-.socials_button
-{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 5px;
-width: 18%;
-gap: 2%;
-    /*background*/
-  background-color: #9969F9;
-  border-radius: 30px;
-  /*font setting*/  
-  color: #F8F8F8;
-  font-size: 14px;
-}
-
-footer a:visited
-{
-  color: #F8F8F8;
-}
-
-footer a:hover
-{
-  color: #432285;
+  font-size: 15px;
 }
