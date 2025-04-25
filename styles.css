@@ -58,6 +58,7 @@ ul li
 h1
 {
   font-weight: 300;
+  margin-left: 2%;
 }
 
 h2
@@ -678,12 +679,61 @@ margin-left: 10%;
   gap: 2%;
   margin-bottom: 2%;
 }
-
-#Testing_one img
+/*Localizada no projeto Kayak*/
+#Testing img
 {
   width: 50vw;
   border: black 1px solid;
   border-radius: 10px;
+}
+
+/*Localizada no projeto Primavera Longa*/
+#Posters
+{
+  width: 97vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+#Posters img
+{
+  width: 30%;
+}
+
+#SM_Posts
+{
+  width: 97vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+#SM_Posts img
+{
+  width: 30%;
+  margin-top: 2%;
+}
+
+#Stories
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+#Stories video
+{
+  width: 30%;
 }
 
 .Datasheet
@@ -716,7 +766,6 @@ margin-left: 10%;
   width: 80%;
   padding: 5%;
 }
-
 
 /*Todas as Text_Boxes*/
 
