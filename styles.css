@@ -461,10 +461,6 @@ section figure a {
   margin-top: 3%;
 }
 
-    .lists_ul
-    {
-      width: 90%;
-    }
 
 /* Galeria de Fotos sobre Journaling*/
 #Journaling_Gallery
@@ -750,19 +746,23 @@ margin-left: 10%;
 {
 /*Background setting*/
 padding: 40px;
-background-color: #9969F9;
+border:#9969F9 4px solid;
   width: 20%;
+  border-radius: 20px;
   margin-top: 2%;
-/*to top-left corner, top-right corner,to bottom-left corner*/
-border-radius: 10px 100px 20px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
     #TextBox p
     {
-      color: #F8F8F8;
+      color: black;
     font-size: 24px;
     padding-bottom: 5%;
     padding-top: 5%;
+    
     }
 
     #TextBox p span
@@ -773,12 +773,12 @@ border-radius: 10px 100px 20px 10px;
 
     #TextBox h5
     {
-      color: #F8F8F8;
+      color: black;
     }
 
 /*Caixa caracterizada pela forma e o stroke lilás*/
 /*Localizada no About Me*/
-#TextBox_outline
+#TextBox_purple
 {
 /*Background setting*/
 padding: 40px;
@@ -786,12 +786,12 @@ border:#9969F9 4px solid;
   width: 20%;
   margin-top: 2%;
 /*to top-left corner, top-right corner,to bottom-left corner*/
-border-radius: 20px 100px 20px 100px;
+border-radius: 20px;
 display: flex;
 flex-wrap:wrap;
 align-items: center;
 }
-  #TextBox_outline p
+  #TextBox_purple p
   {
     color:#9969F9;
   font-size: 24px;
@@ -799,17 +799,16 @@ align-items: center;
   padding-top: 5%;
   }
 
-  #TextBox_outline p span
+  #TextBox_purple p span
   {
     color:#9969F9;
     font-size: 24px;
     font-weight: 600;
   }
 
-  #TextBox_outline h5
+  #TextBox_purple h5
   {
   color:#9969F9;
-  font-weight: 400;
   }
 
   /*Localizada no projeto Resistoo*/
@@ -820,8 +819,7 @@ align-items: center;
     background-color:#19226D;
       width: 20%;
       margin-top: 2%;
-    /*to top-left corner, top-right corner,to bottom-left corner*/
-    border-radius: 10px 100px 20px 10px;
+      border-radius: 20px;
 }
       #TextBox_resistoo_blue h2
       {
@@ -850,8 +848,7 @@ align-items: center;
     background-color: #FFAC18;
       width: 20%;
       margin-top: 2%;
-    /*to top-left corner, top-right corner,to bottom-left corner*/
-    border-radius: 10px 20px 10px 100px;
+    border-radius: 20px;
 }
       #TextBox_resistoo_yellow h2
       {
@@ -878,9 +875,11 @@ align-items: center;
     padding: 40px;
     border: black 4px solid;
       width: 20%;
-      margin-top: 2%;
-    /*to top-left corner, top-right corner,to bottom-left corner*/
-    border-radius: 10px 100px 20px 10px;
+      margin-top: 2%;    
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 }
 
 #TextBox_black_outline ol li
