@@ -1,4 +1,13 @@
 
+/* Daniela Teodoro, 3220561
+Portfolio
+3º ano 2024-2025, 2º Semestre
+Época de Avaliação = Continua
+ESAD.CR, Licenciatura Design Gráfico e Multimedia
+Laboratório de Projeto II, Marco Heleno
+05/05/2025
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rubik+Spray+Paint&display=swap');
 
 
@@ -6,7 +15,6 @@
 {
   margin: 0;
   padding: 0;
-  /*background-color: #F8F8F8*/
 }
 
 
@@ -16,7 +24,6 @@ body {
   color: black;
   font-size: 16px;
 }
-
 
 
 header
@@ -54,7 +61,6 @@ ul li
 }
 
 /*Text styles (h)*/
-
 h1
 {
   font-weight: 300;
@@ -104,7 +110,7 @@ align-items: center;
 
 #name_title /*o meu nome*/
 {
-    /*Font setting*/
+    /*Defenições do tipo de letra*/
     font-size: 27px;
     font-weight: bold;
 
@@ -121,7 +127,7 @@ nav ul /* lista do Menu | Defenições*/
 
 nav ul li  /* lista do Menu*/
 {
-/*Font setting*/
+/*Defenições do tipo de letra*/
     
   font-size: 17px;
   font-weight: normal;
@@ -130,14 +136,12 @@ nav ul li  /* lista do Menu*/
 }
 
 /*   footer  */
-
 footer
 {
 padding: 2%;
 border-top: #9969F9 5px solid;
 border-radius: 20px;
 
-/*flex settings*/
 display: flex;
 justify-content: space-between;
 margin-top: 2%;
@@ -153,9 +157,9 @@ footer span
   font-size: 20px;
   font-weight: bold;
   color: #9969F9;
-
 }
 
+/* lista das Redes Sociais*/
 #Socials
 {
 width: 70%;
@@ -164,6 +168,7 @@ justify-content: flex-end;
 gap: 2%;
 }
 
+/*Botões das Redes Sociais*/
 .socials_button
 {
 display: flex;
@@ -172,14 +177,15 @@ align-items: center;
 padding: 5px;
 width: 18%;
 gap: 2%;
-    /*background*/
+  /*background*/
   background-color: #9969F9;
   border-radius: 30px;
-  /*font setting*/  
+  /*Defenições do tipo de letra*/
   color: #F8F8F8;
   font-size: 14px;
 }
 
+/*Redimensionar da foto do botão das Redes Sociais*/
 #Socials .socials_button img
 {
   width: 13%;
@@ -195,10 +201,9 @@ gap: 2%;
   color: #432285;
 }
 
-/* Index */
 /* APRESENTAÇÃO */
-
 /* controla a primeira área com os dois retângulos*/
+/*Encontra-se na página "Index" e "About*/
 #beggining
 {
   display: flex;
@@ -215,22 +220,30 @@ gap: 2%;
   width: 55vw;
   margin-top: 50px;
   margin-bottom: 50px;
-    
-  /* to top-left corner, top-right corner,to bottom-left corner */
+
   border-radius: 0px 100px 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+/*Defenições do tipo de letra do área "left"*/
 #left p 
 {
-  padding: 100px;
+  padding: 90px;
   width: 70%;
   color: #F8F8F8;
   /* para defenir bem o tamanho que eu desejo = quase a tela toda */
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+
+/*Por os textos em grande e bold = o meu nome*/
+#left p span
+{
+  font-size: 36px;
+  font-weight: bold;
 }
 
 #left #index 
@@ -244,13 +257,23 @@ gap: 2%;
   /* Font setting */
   font-size: 22px;
 }
-  
-/*Por os textos em grande e bold = o meu nome*/
-#left p span
+
+#curriculum
 {
-  font-size: 36px;
-  font-weight: bold;
+  padding: 2%;
+width: 18%;
+display: flex;
+justify-content: center;
+margin-bottom: 5%;
+
+  /*background*/
+  background-color: #432285;
+  border-radius: 30px;
+  /*Defenições do tipo de letra*/
+  color: #9969F9;
+  font-size: 14px;
 }
+
 
 /* retângulo à direita - "Currently available""*/
 #right
@@ -286,8 +309,8 @@ gap: 2%;
 }
 
 /* IMAGENS SCROLL */
-
 /* Projetos principais*/
+/*Encontra-se na página "Index"*/
 figure /*Imagens Sticky Scroll*/
 { 
   width: 100%;
@@ -356,33 +379,7 @@ section figure a {
       opacity: 100%;
     }
 
-
-
-/*   ABOUT ME   */
-
-/* retângulo à esquerda - Texto sobre mim*/
-#left_aboutme
-{
-background-color:#9969F9;
-width: 55%;
-margin-top: 5%;
-margin-bottom: 50px;
-/*to top-left corner, top-right corner,to bottom-left corner*/
-border-radius: 0px 100px 20px 0px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-  #left_aboutme p
-  {
-    padding: 100px;
-    color: #F8F8F8;
-    margin-top: 5%;
-  margin-bottom: 50px;
-  }
-
-
+/*Encontra-se na página "About"*/
 /* TOOL-BOX - Onde mostro aptidões técnicas - retângulos com icones e texto*/
 /*Secção que controla a Tool Box: a sua forma e espaçamento entre o título e os conteudos*/
 
@@ -400,7 +397,7 @@ align-items: center;
   align-content: flex-start;
   gap: 2%;
 }
-
+/*É a caixa onde se encontra o software a ser apresentado na TollBox*/
 #right #Designers_ToolBox .TollBox 
 {
   border: 3px solid #F8F8F8;
@@ -426,42 +423,6 @@ align-items: center;
   flex-grow: 1;
   font-size: 16px;
 }
-
-/* dá forma á ToolBox */
-TollBox
-{
-  display: flex;
-  align-items: center;
-  /* padding: 15px; */
-  background-color: #F8F8F8;
-  border: 3px solid #9969F9;
-  
-}
-
-  /*Controla os conteúdos dentro do ToolKit*/
-  TollBox span img
-  {
-    position: absolute;
-    margin-left: 20px;
-  }
-  /* espaçamento entre o ícone e o texto */
-  TollBox img {
-    margin-right: 20px; /* espaçamento entre o ícone e o texto */
-  }
-
-
-  /* texto da Toolbox */
-  TollBox span
-  {
-    font-size: 15px;
-    font-weight: 600;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    gap: 25%;
-  }
 
 /*Titulos das Info_Boxes - Educação e Experiência*/
 #Education_Experience
@@ -505,6 +466,7 @@ TollBox
       width: 90%;
     }
 
+/* Galeria de Fotos sobre Journaling*/
 #Journaling_Gallery
 {
   width: 97vw;
@@ -522,6 +484,7 @@ TollBox
   gap: 1.5%;
 }
 
+/* Fotos da galeria de fotos sobre Journaling*/
 #Journaling_Gallery #one
 {
   background-image: url("about_media/svt_itorijanai.jpeg");
@@ -594,7 +557,7 @@ TollBox
   margin-bottom: 1%;
 }
 
-/*Texto introdução dos projetos*/
+/*Texto - Introdução dos projetos*/
 .project_texts p
 {
 margin-left: 3%;
@@ -611,16 +574,20 @@ margin-left: 3%;
   font-weight: 600;
 }
 
+/*Img - Thumbnail dos projetos*/
 .Project_thumbnail
 {
   width: 100 vw;
 }
 
+/*Img - Imagem com os conteudos mais importantes dos projetos*/
 .Important_Frames
 {
   width: 100%;
 }
 
+/*Img - Imagens que explicam mais sobre os projetos*/
+/*Localizada nos projetos "Orbeats" e "Resistoo"*/
 #app_showcase
 {
   width: 100%;
@@ -637,11 +604,14 @@ video
   margin-bottom: 2%;
 }
 
+/*Localizada no projeto "Orbeats"*/
 .Personas
 {
   position: relative;
 }
 
+/*Galeria com várias imagens verticais*/
+/*Localizada no projeto "Orbeats" e "Resistoo"*/
 .Wireframes
 {
   position: relative;
@@ -663,6 +633,7 @@ video
   margin-bottom: 1%;
 }
 
+/*Imagem*/
 /*Localizada no projeto Kayak*/
 #Flowchart
 {
@@ -670,6 +641,7 @@ width: 80%;
 margin-left: 10%;
 }
 
+/* "Wireframe Testing"*/
 /*Localizada no projeto Kayak*/
 #Testing
 {
@@ -703,7 +675,7 @@ margin-left: 10%;
 {
   width: 30%;
 }
-
+/*Localizada no projeto Primavera Longa*/
 #SM_Posts
 {
   width: 97vw;
@@ -721,7 +693,7 @@ margin-left: 10%;
   width: 30%;
   margin-top: 2%;
 }
-
+/*Localizada no projeto Primavera Longa*/
 #Stories
 {
   display: flex;
@@ -730,11 +702,12 @@ margin-left: 10%;
   justify-content: center;
   gap: 2%;
 }
-
+/*Localizada no projeto Primavera Longa*/
 #Stories video
 {
   width: 30%;
 }
+
 
 .Datasheet
 {
@@ -751,6 +724,7 @@ margin-left: 10%;
       margin: 0%;
     }
 
+/*Localizada no projeto Primavera Longa*/
 #Branding
 {
   margin-top: 2%;
@@ -761,6 +735,7 @@ margin-left: 10%;
 
 }
 
+/*Localizada no projeto Resistoo*/
 .Logo_showcase img
 {
   width: 80%;
