@@ -656,7 +656,7 @@ margin-left: 10%;
 }
 
 /*Localizada no projeto Primavera Longa*/
-#Posters
+.Right_layout
 {
   width: 97vw;
   position: relative;
@@ -667,11 +667,12 @@ margin-left: 10%;
   gap: 2%;
 }
 
-#Posters img
+#Poster
 {
-  width: 30%;
+  width: 40%;
+  position: relative;
 }
-/*Localizada no projeto Primavera Longa*/
+/*Localizada no projeto Primavera Longa e*/
 #SM_Posts
 {
   width: 97vw;
@@ -736,6 +737,11 @@ margin-left: 10%;
 {
   width: 80%;
   padding: 5%;
+}
+
+#gifs
+{
+  width: 20%;
 }
 
 /*Todas as Text_Boxes*/
@@ -885,4 +891,24 @@ align-items: center;
 #TextBox_black_outline ol li
 {
   font-size: 15px;
+}
+
+#TextBox_waterbomb_yellow
+{
+    /*Background setting*/
+    padding: 40px;
+    background-color: #F3DB00;
+      width: 20%;
+      margin-top: 2%;
+    border-radius: 20px;
+}
+
+#TextBox_waterbomb_green
+{
+    /*Background setting*/
+    padding: 40px;
+    background-color: #32CC10;
+      width: 20%;
+      margin-top: 2%;
+    border-radius: 20px;
 }
