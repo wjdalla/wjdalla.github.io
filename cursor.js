@@ -1,3 +1,4 @@
+<script>
 gsap.set('.cursor',{xPercent:-50, yPercent: -50})
 
     let cursor = document.querySelector('.cursor')
@@ -41,3 +42,4 @@ gsap.set('.cursor',{xPercent:-50, yPercent: -50})
             rotate: 45,
         })
     })
+</script>
