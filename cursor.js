@@ -1,21 +1,20 @@
 <script>
-gsap.set('.cursor',{xPercent:-50, yPercent: -50})
 
     let cursor = document.querySelector('.cursor')
     let stars = document.querySelector('.stars')
-    let title = document.querySelector('h1')
+    let a = document.querySelector('a')
 
     let mouseX;
     let mouseY;
 
-    window.addEventListener('mousemove', e => {
+    window.addEventListener('mousemove', e ={">"}
         mouseX = e.clientX;
         mouseY = e.clientY;
 
-        gsap.to(cursor, 0.5, {x: mouseX, y:mouseY})
-    })
+        gsap.to(cursor, 0.5, {x: mouseX, y:mouseY{"}"})
+    {"}"})
 
-    title.addEventListener('mouseenter', () => {
+    a.addEventListener('mouseenter', () ={">"} {
         gsap.to(stars, 1, {
             scale: 1,
             opacity: 1,
@@ -26,14 +25,14 @@ gsap.set('.cursor',{xPercent:-50, yPercent: -50})
         })
     })
 
-    title.addEventListener('mousemove', () => {
+    a.addEventListener('mousemove', () ={">"} {
         gsap.to(stars, 1, {
             x: mouseX,
             y: mouseY
         })
     })
 
-    title.addEventListener('mouseleave', () => {
+    a.addEventListener('mouseleave', () ={">"} {
         gsap.to(stars, 0.2, {
             scale: 0,
             opacity: 0,
