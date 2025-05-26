@@ -100,26 +100,8 @@ h5
 
 /*Cursor*/
 
-/*
-.cursor .stars
-{
-position: fixed;
-left: 0;
-pointer-events: none;
-transition: transform .1s;
-}
 
-.cursor
-{
-background: #9969F9;
-border-radius: 100%;
-top: 0;
-height: 25px;
-width: 25px;
-z-index: 999;
-}
-
-.stars
+.meu_cursor
 {
 background: transparent;
 top: 50%;
@@ -130,11 +112,11 @@ display: grid;
 place-content: center;
 opacity: 0%;
 }
-.stars img
+.meu_cursor img
 {
   width: 70px;
 }
-*/
+
 
 /* MENU - nav bar*/
 
@@ -492,6 +474,7 @@ section figure a {
 /* Conjunto de 3 listas ou textos  na horizontal*/
 #Lists
 {
+  width: 97%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -701,6 +684,24 @@ width: 80%;
 margin-left: 10%;
 }
 
+.Website_Wireframes
+{
+    position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1%;
+  width: 96%;
+    margin: 2%;
+}
+
+.Website_Wireframes img
+{
+  width: 16%;
+  border: black 1px solid;
+  margin-bottom: 1%;
+}
+
 /* "Wireframe Testing"*/
 /*Localizada no projeto Kayak*/
 #Testing
@@ -759,6 +760,7 @@ margin-left: 10%;
 #Stories
 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -767,7 +769,7 @@ margin-left: 10%;
 /*Localizada no projeto Primavera Longa*/
 #Stories video
 {
-  width: 30%;
+  width: 32%;
 }
 
 
@@ -792,6 +794,7 @@ margin-left: 10%;
   margin-top: 2%;
   display: flex;
   justify-content:center;
+  align-items: center;
   width: 100%;
   gap: 3%;
 
