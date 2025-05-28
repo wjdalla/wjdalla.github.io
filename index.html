@@ -20,24 +20,34 @@ Laboratório de Projeto II, Marco Heleno
     <link href="styles.css" type="text/css" rel="stylesheet"/>
     <title>Daniela's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="index_media/favicon.ico.png">
+
+    <script src="p5.min.js"></script>
+    <script src="sketch.js"></script>
 </head>
 
 <body>
+
+
+
     <header>
         <nav>
-            <a id="name_title" href="index.html" target="_self">Daniela's Portfolio</a>
+            <a id="name_title" href="index.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">Daniela's Portfolio</a>
             <ul>
-                <li><a href="about.html" target="_self"> about</a></li>
-                <li><a href="mailto:by.danielateodoro@gmail.com"> by.danielateodoro@gmail.com</a></li>
+                <li><a href="about.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> about</a></li>
+                <li><a href="mailto:by.danielateodoro@gmail.com" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> by.danielateodoro@gmail.com</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
+    <div id="meu_cursor">
+        <img src="index_media/stars.svg" alt="image that appears when the cursor hovers a link">
+    </div>
+
         <section id="beggining">
             <div id="left">
-                <p id="index"> Hi!<br>Im <span>Daniela Teodoro</span>,<br>a <span>UX/UI and Web Designer</span><br>based in Portugal!</p>
+                <p id="index"> Hi!<br>Im <span>Daniela Teodoro</span>,<br>a <span>UX/UI and Digital Designer</span><br>based in Portugal!</p>
             </div>
             <div id="right">
                 <p>Im<br><span>Currently<br>Available</span></p>
@@ -49,40 +59,40 @@ Laboratório de Projeto II, Marco Heleno
         <section id="works">    
             <figure>
                 <img src="index_media/orbeats_thumbnail.jpg" alt="Orbeats App Prototype project" >
-                <a href="projects/Orbeats_Project/Orbeats.html" target="_self">View<br>Project</a>
+                <a href="projects/Orbeats_Project/Orbeats.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View<br>Project</a>
                 <figcaption>App Prototype <span><br>+60 Wireframes | UX/UI Design Development
                     <br>Prototype Testing | Design System Development</span></figcaption>
             </figure> 
             
             <figure> 
                 <img src="index_media/kayak_thumbnail.jpg" alt="Kayay, Website Redesign project">
-                <a href="projects/Kayak_Project/Kayak.html" target="_self">View <br>Project</a>
+                <a href="projects/Kayak_Project/Kayak.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>Website Redesign<span><br>Accessibility Study | Usability Tests | Mind Map <br>
                 Wireframe Development | Improvements Implementation</span></figcaption>
             </figure>
 
             <figure> 
                 <img src="index_media/resistoo_thumbnail.jpg" alt="Resistoo, App Prototype">
-                <a href="projects/Resistoo_Project/Resistoo.html" target="_self">View <br>Project</a>
+                <a href="projects/Resistoo_Project/Resistoo.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>App Prototype<span><br>Topic Research | User and Tendencies <br>Research | Persona | Wireframes |<br>Flowcharts | Prototype | Presentation Video</span></figcaption>
             </figure>
 
             <figure> 
                 <img src="index_media/PrimaveraLonga_thumbnail.jpg" alt="Primavera Longa, Event visual Identity Development">
-                <a href="projects/PrimaveraLonga_Project/PrimaveraLonga.html" target="_self">View <br>Project</a>
+                <a href="projects/PrimaveraLonga_Project/PrimaveraLonga.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>Event Development<span><br>Visual Identity | Simple and Schedule Poster |<br>Social Media Posts | Instagram Stories |
                     <br>Save the date Videos | Teaser Videos</span></figcaption>
             </figure>
             
             <figure> 
                 <img src="index_media/WaterBomb_thumbnail.jpg" alt="WaterBomb, AR Poster">
-                <a href="projects/Waterbomb_Project/Waterbomb.html" target="_self">View <br>Project</a>
+                <a href="projects/Waterbomb_Project/Waterbomb.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>AR Poster<span><br>Event Research | Visual Identity | <br> 3D Objects | AR Implementation</span></figcaption>
             </figure>
 
             <figure> 
                 <img src="index_media/CheckIn_thumbnail.jpg" alt="Check In, Brand Creation and Website">
-                <a href="projects/CheckIn_Project/CheckIn.html" target="_self">View <br>Project</a>
+                <a href="projects/CheckIn_Project/CheckIn.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>Brand Creation and Website<span><br>Topic Research | Visual Identity | Logo Development <br> Merchandise | Wireframes | Website Prototype</span></figcaption>
             </figure>
         </section>
@@ -92,17 +102,17 @@ Laboratório de Projeto II, Marco Heleno
         <p>by<span>Daniela Teodoro</span><br>2025</p>
        
         <section id="Socials">
-            <a class="socials_button" href="https://www.linkedin.com/in/daniela-teodoro-948b32339/" target="_blank">
+            <a class="socials_button" href="https://www.linkedin.com/in/daniela-teodoro-948b32339/" target="_blank" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">
                 <img src="contact_media/linkedin_icon.svg" alt="Linkedin icon">
                 Linkedin
             </a>
 
-            <a class="socials_button" href="https://www.instagram.com/_by_dalla_/?hl=pt" target="_blank">
+            <a class="socials_button" href="https://www.instagram.com/_by_dalla_/?hl=pt" target="_blank" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">
                 <img src="contact_media/instagram_icon.svg" alt="Instagram icon">
                 Instagram
             </a>
 
-            <a class="socials_button" href="https://www.behance.net/danielateodoro" target="_blank">
+            <a class="socials_button" href="https://www.behance.net/danielateodoro" target="_blank" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">
                 <img src="contact_media/behance_icon.svg" alt="Behance icon">
                 Behance
             </a>

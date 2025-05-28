@@ -18,24 +18,27 @@ Laboratório de Projeto II, Marco Heleno
     <link href="../../styles.css" type="text/css" rel="stylesheet"/>
     <title>Orbeats</title>
     <link rel="icon" type="image/x-icon" href="medias/favicon.ico.png">
+    <script src="../../p5.min.js"></script>
+    <script src="../../sketch.js"></script>
 </head>
-
 
 <body>
     <header>
         <nav>
-            <a id="name_title" href="../../index.html" target="_self">Daniela's Portfolio</a>
+            <a id="name_title" href="../../index.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">Daniela's Portfolio</a>
             <ul>
-                <li><a href="../../index.html#works" target="_self"> works</a></li>
-                <li><a href="../../about.html" target="_self"> about</a></li>
-                <li><a href="mailto:by.danielateodoro@gmail.com"> by.danielateodoro@gmail.com</a></li>
+                <li><a href="../../index.html#works" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> works</a></li>
+                <li><a href="../../about.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">about</a></li>
+                <li><a href="mailto:by.danielateodoro@gmail.com" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> by.danielateodoro@gmail.com</a></li>
             </ul>
         </nav>
     </header>
 
-
-
     <main>
+    
+    <div id="meu_cursor">
+        <img src="../../index_media/stars.svg" alt="image that appears when the cursor hovers a link">
+    </div>
    
     <div class="Project_thumbnail">
     <img src="medias/orbeats_thumbnail_projecy.jpg" alt="Project Thumbnail of the App Orbeats">
@@ -49,7 +52,7 @@ Laboratório de Projeto II, Marco Heleno
     </p>
     </div>
     <div class="project_texts_left">
-<p><span>Group Project:</span> Daniela Teodoro | <a href="https://mikusoo.github.io/index.html"> Carina Serra </a>| Frederica Sonso</p>
+<p><span>Group Project:</span> Daniela Teodoro | <a href="https://mikusoo.github.io/index.html" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> Carina Serra </a>| Frederica Sonso</p>
 <p><span>Methodology:</span> Personas | Storyboards
     Wireframes | Flowcharts
     Usability tests |<br>Prototype | 
@@ -119,22 +122,20 @@ Laboratório de Projeto II, Marco Heleno
         <p>by<span>Daniela Teodoro</span><br>2025</p>
        
         <section id="Socials">
-            <a href="https://www.linkedin.com/in/daniela-teodoro-948b32339/" target="_blank"> <div class="socials_button"> </a>
+            <a class="socials_button" href="https://www.linkedin.com/in/daniela-teodoro-948b32339/" target="_blank" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">
                 <img src="../../contact_media/linkedin_icon.svg" alt="Linkedin icon">
-                <p> <a href="https://www.linkedin.com/in/daniela-teodoro-948b32339/" target="_blank"> Linkedin</p> </a>
-            </div>
+                Linkedin
+            </a>
 
-            <div class="socials_button">
+            <a class="socials_button" href="https://www.instagram.com/_by_dalla_/?hl=pt" target="_blank" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">
                 <img src="../../contact_media/instagram_icon.svg" alt="Instagram icon">
-                <p> <a href="https://www.instagram.com/_by_dalla_/?hl=pt" target="_blank">Instagram</p></a>
-            </div>
-            
+                Instagram
+            </a>
 
-            <div class="socials_button">
+            <a class="socials_button" href="https://www.behance.net/danielateodoro" target="_blank" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">
                 <img src="../../contact_media/behance_icon.svg" alt="Behance icon">
-                <p> <a href="https://www.behance.net/danielateodoro" target="_blank"> Behance</p> </a>
-            </div>
-           
+                Behance
+            </a>
         </section>
     </footer>
 </body>

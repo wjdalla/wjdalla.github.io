@@ -18,20 +18,28 @@ Laboratório de Projeto II, Marco Heleno
     <link href="../../styles.css" type="text/css" rel="stylesheet"/>
     <title>Primavera Longa</title>
     <link rel="icon" type="image/x-icon" href="medias/favicon.ico.png">
+    <script src="../../p5.min.js"></script>
+    <script src="../../sketch.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <a id="name_title" href="../../index.html" target="_self">Daniela's Portfolio</a>
+            <a id="name_title" href="../../index.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">Daniela's Portfolio</a>
             <ul>
-                <li><a href="../../index.html#works" target="_self"> works</a></li>
-                <li><a href="../../about.html" target="_self"> about</a></li>
-                <li><a href="mailto:by.danielateodoro@gmail.com"> by.danielateodoro@gmail.com</a></li>
+                <li><a href="../../index.html#works" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> works</a></li>
+                <li><a href="../../about.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">about</a></li>
+                <li><a href="mailto:by.danielateodoro@gmail.com" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> by.danielateodoro@gmail.com</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
+    
+    <div id="meu_cursor">
+        <img src="../../index_media/stars.svg" alt="image that appears when the cursor hovers a link">
+    </div>
+    
         <div class="Project_thumbnail">
             <img src="medias/primaveralonga_thumbnail_projeto.jpg" alt="Project Thumbnail of the Website Kayak">
             </div>
@@ -43,11 +51,12 @@ Laboratório de Projeto II, Marco Heleno
             </p>
             </div>
             <div class="project_texts_left">
-        <p><span>Group Project:</span> Daniela Teodoro | <a href="https://mikusoo.github.io/index.html"> Carina Serra </a> | Frederica Sonso | Montserrat Dalgo</p>
+        <p><span>Group Project:</span> Daniela Teodoro | <a href="https://mikusoo.github.io/index.html" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()"> Carina Serra </a> | Frederica Sonso | Montserrat Dalgo</p>
         <p><span>Methodology:</span> Visual Identity | Simple and Schedule Poster | Social Media Posts | Instagram Stories |
             Save the date Videos | Teaser Videos
         </p>
         </div>
+        
         </section>
 
         <h2>Logo Development</h2>

@@ -35,12 +35,12 @@ header
 a:link { 
   text-decoration: none;
   font-weight: 300;
-  cursor: pointer;
+  /*cursor: pointer;*/
 } 
 a:visited { 
   text-decoration: none; 
   color: black;
-  cursor: pointer;
+  /*cursor: pointer;*/
 } 
 a:hover { 
   text-decoration: none;
@@ -53,7 +53,8 @@ a
 {
   text-decoration: none;
   color: #9969F9;
-  cursor: pointer;
+  /*cursor: pointer;*/
+  /*cursor: none !important;*/
 }
 
 /*Lists*/
@@ -101,20 +102,18 @@ h5
 /*Cursor*/
 
 
-.meu_cursor
+#meu_cursor
 {
-background: transparent;
-top: 50%;
-width: 40px;
-height: 40px;
-z-index: 9999;
-display: grid;
-place-content: center;
-opacity: 0%;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
 }
-.meu_cursor img
+
+#meu_cursor img
 {
-  width: 70px;
+  width: 80px;
+  mix-blend-mode: difference;
+
 }
 
 
@@ -201,11 +200,11 @@ padding: 5px;
 width: 18%;
 gap: 2%;
   /*background*/
-  background-color: #9969F9;
   border-radius: 30px;
   /*Defenições do tipo de letra*/
   color: #F8F8F8;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /*Redimensionar da foto do botão das Redes Sociais*/
@@ -216,7 +215,7 @@ gap: 2%;
 
 #Socials a:visited
 {
-  color: #F8F8F8;
+  color: black;
 }
 
 #Socials a:hover
@@ -261,6 +260,7 @@ gap: 2%;
   margin-top: 80px;
   margin-bottom: 50px;
 }
+
 
 /*Por os textos em grande e bold = o meu nome*/
 #left p span
@@ -388,7 +388,7 @@ section figure a {
 
   padding: 50px;
   border: none;
-  cursor: pointer;
+  /*cursor: pointer;*/
   border-radius: 100px;
 
     font-size: 20px;
