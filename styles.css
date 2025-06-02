@@ -99,21 +99,38 @@ h5
   margin-right: 3%;
 }
 
-/*Cursor*/
-
-
+/*Cursores*/
 #meu_cursor
 {
-  z-index: -1;
-  width: 100px;
-  height: 100px;
+  pointer-events: none;
 }
 
+/*Controla o tamanho da imagem do cursor - Imagem ocupa 100% do espaço autorizado no java scrip*/
 #meu_cursor img
 {
-  width: 80px;
-  mix-blend-mode: difference;
+  width: 100%;
+  height: 100%;
 
+}
+
+/*Cursor dos projetos*/
+/*Controla a imagem que "cresce" centrando a imagem e o texto*/
+#view_project 
+{
+  color: #9969F9;
+  mix-blend-mode: difference;
+  font-weight: 600;
+
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 
@@ -256,7 +273,7 @@ gap: 2%;
   padding: 90px;
   width: 70%;
   color: #F8F8F8;
-  /* para defenir bem o tamanho que eu desejo = quase a tela toda */
+  /* para defenir bem o tamanho, semelhante a todo o viewport */
   margin-top: 80px;
   margin-bottom: 50px;
 }
@@ -269,18 +286,21 @@ gap: 2%;
   font-weight: bold;
 }
 
+/*Controla o tamanho da letra da caixa left apenas na página do Index*/
 #left #index 
 {
   /* Font setting */
   font-size: 36px;
 }
 
+/*Controla o tamanho da letra da caixa left apenas na página do About*/
 #left #about 
 {
   /* Font setting */
   font-size: 22px;
 }
 
+/*Botão que leva o utilizador ao curriculo | Botão centrado e roxo*/
 #curriculum
 {
   padding: 2%;
@@ -325,6 +345,7 @@ margin-bottom: 5%;
   text-decoration-line: underline;
 }
 
+/*Localizado na página About*/
 #beggining a
 {
   color: #F8F8F8;
@@ -374,33 +395,6 @@ figure /*Imagens Sticky Scroll*/
         font-weight: 500; 
       }
 
-/*botão das imagens stickys*/
-section figure a {
-  /*defenições para o manter no centro*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  color: #F8F8F8;
-  background-color: #9969F9;
-  opacity: 45%;
-
-  padding: 50px;
-  border: none;
-  /*cursor: pointer;*/
-  border-radius: 100px;
-
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-}
-    /*botão das imagens stickys - interação hover*/
-    section figure a:hover {
-      background-color: #9969F9;
-      color: #F8F8F8;
-      opacity: 100%;
-    }
 
 /*Encontra-se na página "About"*/
 /* TOOL-BOX - Onde mostro aptidões técnicas - retângulos com icones e texto*/
@@ -504,69 +498,69 @@ section figure a {
   gap: 1.5%;
 }
 
-/* Fotos da galeria de fotos sobre Journaling*/
-#Journaling_Gallery #one
-{
-  background-image: url("about_media/svt_itorijanai.jpeg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; /*contain*/
-}
+    /* Fotos da galeria de fotos sobre Journaling*/
+    #Journaling_Gallery #one
+    {
+      background-image: url("about_media/svt_itorijanai.jpeg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; /*contain*/
+    }
 
-#Journaling_Gallery #two
-{
-  background-image: url("about_media/wjsn_chocome_hmph!.jpeg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    #Journaling_Gallery #two
+    {
+      background-image: url("about_media/wjsn_chocome_hmph!.jpeg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-#Journaling_Gallery #three
-{
-  background-image: url("about_media/bss_fighting.jpg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    #Journaling_Gallery #three
+    {
+      background-image: url("about_media/bss_fighting.jpg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-#Journaling_Gallery #four
-{
-  background-image: url("about_media/wjsn_myblack_myattitude.jpeg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    #Journaling_Gallery #four
+    {
+      background-image: url("about_media/wjsn_myblack_myattitude.jpeg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-#Journaling_Gallery #five
-{
-  background-image: url("about_media/artms_virtualangel.jpg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    #Journaling_Gallery #five
+    {
+      background-image: url("about_media/artms_virtualangel.jpg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-#Journaling_Gallery #six
-{
-  background-image: url("about_media/ive_heya.jpg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    #Journaling_Gallery #six
+    {
+      background-image: url("about_media/ive_heya.jpg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-#Journaling_Gallery #seven
-{
-  background-image: url("about_media/aespa_supernova.jpg");
-  width: 23%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    #Journaling_Gallery #seven
+    {
+      background-image: url("about_media/aespa_supernova.jpg");
+      width: 23%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
 /*   PROJECTS  */
 /*Titulo dos Projetos*/
@@ -613,10 +607,6 @@ margin-left: 3%;
   width: 45%;
 }
 
-
-
-
-
 /*Img - Thumbnail dos projetos*/
 .Project_thumbnail
 {
@@ -630,7 +620,7 @@ margin-left: 3%;
 }
 
 /*Img - Imagens que explicam mais sobre os projetos*/
-/*Localizada nos projetos "Orbeats" e "Resistoo"*/
+/*Localizada nos projetos "Orbeats", "Resistoo" e "Check In"*/
 #app_showcase
 {
   width: 100%;
@@ -676,7 +666,7 @@ video
   margin-bottom: 1%;
 }
 
-/*Imagem*/
+/*Imagem - não ocupa a totalidade do viewport*/
 /*Localizada no projeto Kayak*/
 #Flowchart
 {
@@ -684,6 +674,8 @@ width: 80%;
 margin-left: 10%;
 }
 
+/*Galeria com várias imagens com tamanhos diferentes*/
+/*Localizada no projeto Check In*/
 .Website_Wireframes
 {
     position: relative;
@@ -720,7 +712,8 @@ margin-left: 10%;
   border-radius: 10px;
 }
 
-/*Localizada no projeto Primavera Longa*/
+/*Localizada nos projetos "Primavera Longa" e "WaterBomb"*/
+/*Controla as imagens dos Posters*/
 .Right_layout
 {
   width: 97vw;
@@ -737,7 +730,8 @@ margin-left: 10%;
   width: 40%;
   position: relative;
 }
-/*Localizada no projeto Primavera Longa e em Waterbomb*/
+
+/*Localizada no projeto "Primavera Longa", "Waterbomb" e em "Check In"*/
 #SM_Posts
 {
   width: 97vw;
@@ -756,7 +750,7 @@ margin-left: 10%;
   margin-top: 2%;
 }
 
-/*Localizada no projeto Primavera Longa*/
+/*Localizada nos projetos "Primavera Longa" e em "Check In"*/
 #Stories
 {
   display: flex;
@@ -766,13 +760,15 @@ margin-left: 10%;
   justify-content: center;
   gap: 2%;
 }
-/*Localizada no projeto Primavera Longa*/
+
+
 #Stories video
 {
   width: 32%;
 }
 
-
+/*Conjunto de linhas de texto*/
+/*Localizado nos projetos "Orbeats", "Kayak", "Primavera Longa" e "Waterbomb"*/
 .Datasheet
 {
   margin: 3%;
@@ -788,7 +784,7 @@ margin-left: 10%;
       margin: 0%;
     }
 
-/*Localizada no projeto Primavera Longa*/
+/*Localizada nos projetos "Resistoo* e "Check In"*/
 #Branding
 {
   margin-top: 2%;
@@ -800,13 +796,13 @@ margin-left: 10%;
 
 }
 
-/*Localizada no projeto Resistoo*/
+/*Localizada nos projetos "Resistoo* e "Check In"*/
 .Logo_showcase img
 {
   width: 80%;
   padding: 5%;
 }
-
+/*Localizada no projeto "Waterbomb"*/
 #gifs
 {
   width: 20%;

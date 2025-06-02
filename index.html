@@ -40,11 +40,7 @@ Laboratório de Projeto II, Marco Heleno
     </header>
 
     <main>
-
-    <div id="meu_cursor">
-        <img src="index_media/stars.svg" alt="image that appears when the cursor hovers a link">
-    </div>
-
+    
         <section id="beggining">
             <div id="left">
                 <p id="index"> Hi!<br>Im <span>Daniela Teodoro</span>,<br>a <span>UX/UI and Digital Designer</span><br>based in Portugal!</p>
@@ -56,45 +52,52 @@ Laboratório de Projeto II, Marco Heleno
         
         
         <!-- Imagens dos Projetos Principais-->
-        <section id="works">    
-            <figure>
-                <img src="index_media/orbeats_thumbnail.jpg" alt="Orbeats App Prototype project" >
-                <a href="projects/Orbeats_Project/Orbeats.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View<br>Project</a>
-                <figcaption>App Prototype <span><br>+60 Wireframes | UX/UI Design Development
-                    <br>Prototype Testing | Design System Development</span></figcaption>
-            </figure> 
+        <section id="works">
+
+            <a href="projects/Orbeats_Project/Orbeats.html" target="_self" onmouseover="growCustomCursor()" onmouseout="shrinkCustomCursor()">    
+                <figure>
+                    <img src="index_media/orbeats_thumbnail.jpg" alt="Orbeats App Prototype project" >
+                    <figcaption>App Prototype <span><br>+60 Wireframes | UX/UI Design Development
+                        <br>Prototype Testing | Design System Development</span></figcaption>
+                </figure>
+            </a>
             
+            <a href="projects/Kayak_Project/Kayak.html" target="_self" onmouseover="growCustomCursor()" onmouseout="shrinkCustomCursor()">
             <figure> 
                 <img src="index_media/kayak_thumbnail.jpg" alt="Kayay, Website Redesign project">
-                <a href="projects/Kayak_Project/Kayak.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>Website Redesign<span><br>Accessibility Study | Usability Tests | Mind Map <br>
                 Wireframe Development | Improvements Implementation</span></figcaption>
             </figure>
+            </a>
 
+            <a href="projects/Resistoo_Project/Resistoo.html" target="_self"onmouseover="growCustomCursor()" onmouseout="shrinkCustomCursor()">
             <figure> 
                 <img src="index_media/resistoo_thumbnail.jpg" alt="Resistoo, App Prototype">
-                <a href="projects/Resistoo_Project/Resistoo.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>App Prototype<span><br>Topic Research | User and Tendencies <br>Research | Persona | Wireframes |<br>Flowcharts | Prototype | Presentation Video</span></figcaption>
             </figure>
+            </a>
 
+            <a href="projects/PrimaveraLonga_Project/PrimaveraLonga.html" target="_self"onmouseover="growCustomCursor()" onmouseout="shrinkCustomCursor()">
             <figure> 
                 <img src="index_media/PrimaveraLonga_thumbnail.jpg" alt="Primavera Longa, Event visual Identity Development">
-                <a href="projects/PrimaveraLonga_Project/PrimaveraLonga.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>Event Development<span><br>Visual Identity | Simple and Schedule Poster |<br>Social Media Posts | Instagram Stories |
                     <br>Save the date Videos | Teaser Videos</span></figcaption>
             </figure>
-            
+            </a>
+
+<a href="projects/Waterbomb_Project/Waterbomb.html" target="_self" onmouseover="growCustomCursor()" onmouseout="shrinkCustomCursor()">
             <figure> 
                 <img src="index_media/WaterBomb_thumbnail.jpg" alt="WaterBomb, AR Poster">
-                <a href="projects/Waterbomb_Project/Waterbomb.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>AR Poster<span><br>Event Research | Visual Identity | <br> 3D Objects | AR Implementation</span></figcaption>
             </figure>
+        </a>
 
+<a href="projects/CheckIn_Project/CheckIn.html" target="_self" onmouseover="growCustomCursor()" onmouseout="shrinkCustomCursor()">
             <figure> 
                 <img src="index_media/CheckIn_thumbnail.jpg" alt="Check In, Brand Creation and Website">
-                <a href="projects/CheckIn_Project/CheckIn.html" target="_self" onmouseover="showCustomCursor()" onmouseout="hideCustomCursor()">View <br>Project</a>
                 <figcaption>Brand Creation and Website<span><br>Topic Research | Visual Identity | Logo Development <br> Merchandise | Wireframes | Website Prototype</span></figcaption>
             </figure>
+        </a>
         </section>
     </main>
 
@@ -118,6 +121,11 @@ Laboratório de Projeto II, Marco Heleno
             </a>
         </section>
     </footer>
+
+    <div id="meu_cursor">
+        <img src="index_media/stars.svg" alt="image that appears when the cursor hovers a link">
+        <p id="view_project">View Project</p>
+    </div>
 
 </body>
 
