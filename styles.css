@@ -31,6 +31,11 @@ header
   width: 100%;
 }
 
+img
+{
+  width: 100%;
+}
+
 /* LINKS */
 a:link { 
   text-decoration: none;
@@ -308,6 +313,7 @@ width: 18%;
 display: flex;
 justify-content: center;
 margin-bottom: 5%;
+text-align: center;
 
   /*background*/
   background-color: #432285;
@@ -391,7 +397,6 @@ figure /*Imagens Sticky Scroll*/
         margin-top: 1%;
 
         /*Font setting*/
-        font-size: 10 px;
         font-weight: 500; 
       }
 
@@ -631,6 +636,11 @@ margin-left: 3%;
   gap: 5%;
 }
 
+#app_showcase img
+{
+  width: 50%;
+}
+
 video
 {
   width: 100%;
@@ -708,6 +718,7 @@ margin-left: 10%;
 #Testing img
 {
   width: 50vw;
+  height: 50vw;
   border: black 1px solid;
   border-radius: 10px;
 }
@@ -977,4 +988,107 @@ align-items: center;
       width: 20%;
       margin-top: 2%;
     border-radius: 20px;
+}
+
+/* Responsive */
+
+/* Small devices (portrait tablets and large phones, up to 767px) */
+@media only screen and (max-width: 767px) 
+{
+  nav ul li
+  {
+    font-size: 14px ;
+    font-weight: 800;
+  }
+  
+  
+  
+  .project_texts
+  {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project_texts_right
+  {
+    width: 80%;
+  }
+
+  .project_texts_left
+  {
+    margin-left: 3%;
+    width: 80%;
+  }
+
+  .Info_Boxes
+  {
+    gap: 2%;
+    flex-direction: column;
+  }
+
+  #Education_Experience
+  {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2%;
+  }
+
+  #TextBox_purple
+  {
+    width: 80%;
+  }
+
+  #TextBox
+  {
+    width: 80%;
+  }
+
+  #TextBox_purple p
+  {
+    font-size: 18px;
+  }
+
+  #TextBox_purple p span
+  {
+    font-size: 20px;
+  }
+
+  #TextBox p
+  {
+    font-size: 18px;
+  }
+    #TextBox p span
+  {
+    font-size: 20px;
+  }
+
+#TextBox_resistoo_blue
+{
+  width: 80%;
+}
+#TextBox_resistoo_yellow
+{
+  width: 80%;
+}
+#TextBox_black_outline
+{
+  width: 80%;
+}
+#TextBox_waterbomb_yellow
+{
+  width: 80%;
+}
+#TextBox_waterbomb_green
+{
+  width: 80%;
+}
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+
 }
