@@ -1001,8 +1001,6 @@ align-items: center;
     font-weight: 800;
   }
   
-  
-  
   .project_texts
   {
     display: block;
@@ -1062,28 +1060,89 @@ align-items: center;
   {
     font-size: 20px;
   }
+  #TextBox_resistoo_blue
+  {
+    width: 80%;
+  }
+  #TextBox_resistoo_yellow
+  {
+    width: 80%;
+  }
+  #TextBox_black_outline
+  {
+    width: 80%;
+  }
+  #TextBox_waterbomb_yellow
+  {
+    width: 80%;
+  }
+  #TextBox_waterbomb_green
+  {
+    width: 80%;
+  }
 
-#TextBox_resistoo_blue
+  #beggining
+  {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+  }
+  
+  #left
+  {
+  width: 100%;
+  }
+  #right
+  {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10px;
+  }
+  #right p
+  {
+  font-size: 30px;
+  }
+
+
+/*Por os textos em grande e bold = o meu nome*/
+#left p span
 {
-  width: 80%;
-}
-#TextBox_resistoo_yellow
-{
-  width: 80%;
-}
-#TextBox_black_outline
-{
-  width: 80%;
-}
-#TextBox_waterbomb_yellow
-{
-  width: 80%;
-}
-#TextBox_waterbomb_green
-{
-  width: 80%;
+  font-size: 32px;
 }
 
+/*Controla o tamanho da letra da caixa left apenas na página do Index*/
+#left #index 
+{
+  /* Font setting */
+  font-size: 32px;
+}
+
+/*Controla o tamanho da letra da caixa left apenas na página do About*/
+#left #about 
+{
+  /* Font setting */
+  font-size: 16px;
+}
+  figcaption
+  {
+    opacity: 0%;
+  }
+
+  .socials_button p
+  {
+    opacity: 0%;
+  }
+
+  .socials_button
+  {
+    align-items: stretch;
+  }
+#Socials .socials_button img
+{
+  width: 50%;
+}
 }
 
 
