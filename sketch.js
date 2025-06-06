@@ -1,3 +1,11 @@
+/* Daniela Teodoro, 3220561
+Portfolio
+3º ano 2024-2025, 2º Semestre
+Época de Avaliação = Continua
+ESAD.CR, Licenciatura Design Gráfico e Multimedia
+Laboratório de Projeto II, Marco Heleno
+05/05/2025
+*/
 
 let cursor_element, cursor_w, cursor_h, view_project_element;
 

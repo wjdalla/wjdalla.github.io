@@ -179,6 +179,11 @@ nav ul li  /* lista do Menu*/
   margin-right: 3%;
 }
 
+#email_responsive
+{
+  display: none;
+}
+
 /*   footer  */
 footer
 {
@@ -718,7 +723,6 @@ margin-left: 10%;
 #Testing img
 {
   width: 50vw;
-  height: 50vw;
   border: black 1px solid;
   border-radius: 10px;
 }
@@ -1000,13 +1004,36 @@ align-items: center;
     font-size: 14px ;
     font-weight: 800;
   }
-  
+
+  nav ul /* lista do Menu | Defenições*/
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5%;
+  margin-right: 8%;
+}
+
+#name_title
+{
+  font-size: 24px;
+}
+
   .project_texts
   {
     display: block;
     flex-direction: column;
     width: 100%;
   }
+
+  .project_texts_right p
+{
+margin-left: 3%;
+  margin-bottom: 10px;
+  width: 98%; 
+  font-size: 16px;
+  font-weight: normal;
+}
 
   .project_texts_right
   {
@@ -1142,6 +1169,53 @@ align-items: center;
 #Socials .socials_button img
 {
   width: 50%;
+}
+
+#Lists
+{
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+#Stories
+{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+#Stories video
+{
+  width: 80%;
+}
+
+#Testing img
+{
+  width: 50vw;
+  height: 50vw;
+  border: black 1px solid;
+  border-radius: 10px;
+}
+
+#email_computer
+{
+  display:none
+}
+
+#email_responsive
+{
+  display: inline;
+  margin-right: 5px;
 }
 }
 
